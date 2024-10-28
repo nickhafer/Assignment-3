@@ -3,7 +3,8 @@ body {
     background-color: #2c3e50;
     color: #ecf0f1;
     margin: 0;
-    padding: 40px;
+    padding: 0;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -12,6 +13,8 @@ body {
 #visualization-container {
     display: flex;
     gap: 30px;
+    margin-top: 20px;
+    padding: 0 40px;
 }
 
 #map-container {
@@ -125,3 +128,23 @@ svg {
     border-radius: 8px;
     overflow: hidden;
 }
+
+/* header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #34495e;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #3498db;
+    margin-bottom: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #ecf0f1;
+    font-weight: 500;
+} */
