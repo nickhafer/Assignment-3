@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bay Area Restaurants Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="visualization-container">
+        <div id="map-container">
+            <!-- Your SVG will be inserted here by JavaScript -->
+        </div>
+        <div id="controls">
+            <h2>Visualization Controls</h2>
+            <div>
+                <label for="radiusA">Circle A Radius:</label>
+                <input type="range" id="radiusA" min="10" max="200" value="50">
+                <span id="radiusAValue">50</span>
+            </div>
+            <div>
+                <label for="radiusB">Circle B Radius:</label>
+                <input type="range" id="radiusB" min="10" max="200" value="50">
+                <span id="radiusBValue">50</span>
+            </div>
+            <div id="price-filter">
+                <label for="price-select">Filter by Price:</label>
+                <select id="price-select" multiple>
+                    <option value="$">$</option>
+                    <option value="$$">$$</option>
+                    <option value="$$$">$$$</option>
+                    <option value="$$$$">$$$$</option>
+                </select>
+                <button id="clear-price-filter">Clear Selection</button>
+            </div>
+            <div id="intersection-count"></div>
+            <div id="tooltip"></div>
+        </div>
+    </div>
+    
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
